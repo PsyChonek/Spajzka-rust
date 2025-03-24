@@ -11,4 +11,5 @@ categories = ["gui", "wasm", "web-programming"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
+web-sys = { version = "0.3.77", features = ["console"] }
 yew = { version="0.21", features=["csr"] }

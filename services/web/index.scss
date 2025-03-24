@@ -1,3 +1,8 @@
+// Colors
+$color-primary: #009a5b;
+$color-secondary: #444444;
+$color-tertiary: #fff6d5;
+
 html,
 body {
   height: 100%;
@@ -9,27 +14,58 @@ body {
   display: flex;
   justify-content: center;
 
-  background: linear-gradient(to bottom right, #444444, #009a5b);
+  background: linear-gradient(to bottom right, $color-secondary, $color-primary);
   font-size: 1.5rem;
 }
 
 main {
-  color: #fff6d5;
+  color: $color-tertiary;
   font-family: sans-serif;
   text-align: center;
-}
-
-.logo {
-  height: 20em;
-}
-
-.heart:after {
-  content: "❤️";
-
-  font-size: 1.75em;
 }
 
 h1 + .subtitle {
   display: block;
   margin-top: -1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  gap: 1em;
+}
+
+.notes {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.notes-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.note {
+  background-color: $color-tertiary;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  width: 10em;
+  color: $color-secondary;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1em;
+  gap: 1em;
 }
