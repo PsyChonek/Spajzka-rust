@@ -1,6 +1,8 @@
 use yew::prelude::*;
 
-use crate::{counter::Counter, notes::Notes, notes_view::NotesView};
+use crate::components::counter::Counter;
+use crate::components::notes::Notes;
+use crate::components::notes_view::NotesView;
 
 #[derive(Clone, PartialEq)]
 pub struct NotesState {

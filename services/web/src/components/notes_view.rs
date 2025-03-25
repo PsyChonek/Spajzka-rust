@@ -5,8 +5,8 @@ use crate::app::NotesState;
 #[derive(PartialEq, Properties)]
 pub struct NotesViewProps {}
 
-#[function_component]
-pub fn NotesView(props: &NotesViewProps) -> Html {
+#[function_component(NotesView)]
+pub fn notes_view(props: &NotesViewProps) -> Html {
     let notes = use_context::<UseReducerHandle<NotesState>>()
         .expect("No NotesState context found!");
     
